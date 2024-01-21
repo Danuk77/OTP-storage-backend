@@ -15,3 +15,5 @@ RUN apt=get -yqq update & \
     poetry install
 
 RUN chmod 755 run.sh
+
+ENTRYPOINT [ "poetry", "run",  "python3",  "main.py" ]
