@@ -5,4 +5,6 @@ services:
       context: ./
       dockerfile: Dockerfile
     container_name: "dev"
+    volumes:
+      - ./src:/usr/src/app/src
     # entrypoint: "/usr/src/app/run.sh"

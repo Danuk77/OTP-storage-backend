@@ -14,6 +14,4 @@ RUN apt=get -yqq update & \
     cp /etc/poetry/bin/poetry /usr/local/bin && \
     poetry install
 
-RUN chmod 755 run.sh
-
-ENTRYPOINT [ "poetry", "run",  "python3",  "main.py" ]
+ENTRYPOINT [ "poetry", "run",  "python3",  "src/main.py" ]
