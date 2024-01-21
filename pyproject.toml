@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "OTP-storage-backend"
+version = "0.1.0"
+description = ""
+authors = ["Danuk Udagama", "Ziad Abdelrehman"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python= "^3.11"
+requests= "^2.31"
+pillow = "^10.2"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
